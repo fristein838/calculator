@@ -72,5 +72,6 @@ static void reallocate(Stack * stack)
 	memcpy(tmp, stack->contents, stack->size);
 	free(stack->contents);
 	stack->contents = tmp;
+	stack->size *= 2;  //malloc으로 메모리 2배 할당한거 사이즈 업데이트
 }
 
