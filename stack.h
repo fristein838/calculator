@@ -16,6 +16,7 @@ bool is_full(Stack *s);
 void push(Stack *s, Item i);
 Item pop(Stack *s);
 Item peek(Stack *s);
+void stack_overflow(void);//추가한 것
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
 #endif
